@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Liên Hệ</title>
+
+    <!-- Icon -->
+    <link rel="short icon" href="images/logo-st-riviu.png">
+
+    <!-- Main StyleSheet CSS -->
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+
+    <!-- Wow Js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+ 
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  </head>
+  <body>
+    <div class="main">
+        <header class="header fixed-top">
+            <div class="grid wide">
+                <!-- navbar-on-pc -->
+                <nav class="navbar ">
+                    <label for="mobile-search-checkbox" class="navbar__mobile-search hide-on-pc hide-on-tablet">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                     </label>
+
+                    <div class="navbar__logo l-1 m-2 c-3 ">
+                        <a href="index.html">
+                            <img src="images/logo-st-riviu.png" alt="Riviu-logo" />
+                        </a>
+                    </div>
+                    
+                    <div class="navbar__list l-5 hide-on-mobile-tablet">
+                        <ul>
+                            <li><a href="index.html">Trang Chủ</a></li>
+                            <li><a href="Introduce.html">Giới Thiệu</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a class="active"href="contact.html">Liên hệ</a></li>
+                            <li class="navbar__sub-menu">
+                                <a href="javascript:;">Khác
+                                    <i class="fa fa-caret-down"></i>
+                                </a>
+                                <ul class="navbar__sub-menu__content">
+                                    <li><a href="galllery.html">Ảnh</a></li>
+                                    <li><a href="news.html">Tin tức</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                     <input type="checkbox" hidden id="mobile-search-checkbox" class="navbar__search-checkbox">  
+                    <div class="navbar__search d-flex l-4">               
+                        <div class="navbar__search-input-wrap">
+                            <span class="navbar__search-btn-icon fa fa-search"></span>
+                            <input type="text" class="navbar__search-input" placeholder="Tìm kiếm Riviu, địa điểm... "> 
+                            <div class="navbar__cart">
+                                <h4 class="navbar__cart-heading">Đã xem gần đây</h4>
+                                <ul class="navbar__cart-list-item">
+                                    <!-- Cart-item -->
+                                    <li class="navbar__cart-item">
+                                        <img src="images/navbar-img1.jpg" alt="" class="navbar__car-img">
+                                        <div class="navbar__cart-item-info">
+                                            <div class="navbar__cart-item-head">
+                                                <h5 class="navbar__cart-item-name">Bếp Xuka - Đội Cấn</h5>
+                                            </div>
+                                            <div class="navbar__cart-item-body">
+                                                <span class="navbar__cart-item-address">
+                                                    805 Hậu Giang, P11, Quận 6, TP. HCM
+                                                </span>
+                                                <span class="navbar__cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="navbar__cart-item">
+                                        <img src="images/navbar-img2.jpg" alt="" class="navbar__car-img">
+                                        <div class="navbar__cart-item-info">
+                                            <div class="navbar__cart-item-head">
+                                                <h5 class="navbar__cart-item-name">Gà Rán KFC - Trung Hoà</h5>
+                                            </div>
+                                            <div class="navbar__cart-item-body">
+                                                <span class="navbar__cart-item-address">
+                                                    123 Hoàng Sa, P10, Quận 3, TP. HCM
+                                                </span>
+                                                <span class="navbar__cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="navbar__cart-item">
+                                        <img src="images/about-us-img01.png" alt="" class="navbar__car-img">
+                                        <div class="navbar__cart-item-info">
+                                            <div class="navbar__cart-item-head">
+                                                <h5 class="navbar__cart-item-name">Hotsun Rice & Chicken - Vạn Hạnh Mail</h5>
+                                            </div>
+                                            <div class="navbar__cart-item-body">
+                                                <span class="navbar__cart-item-address">
+                                                    805 Hậu Giang, P11, Quận 6, TP. HCM
+                                                </span>
+                                                <span class="navbar__cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul> 
+                                <a href="#" class="navbar__cart-view-cart btn">Xem tất cả</a>
+                            </div>
+                        </div>
+                        <div class="navbar__search-select">
+                            <button class="navbar__search-button js-province">Hồ Chí Minh
+                            </button>
+                        </div> 
+                    </div>
+
+                    <div class="navbar__btn-group l-2-4 hide-on-mobile-tablet">
+                        <span href="" class="btn js-from">Đăng nhập</span>
+                        <!-- <span href="" class="btn">Đăng kí</span> -->
+                    </div>
+
+                    <!-- navbar-moble-tablet -->
+                    <div class="navbar__bars-btn hide-on-pc ">
+                        <label for="navbar-btn--input" class="navbar-btn">
+                            <i class="fas fa-bars fa-2x"></i>
+                        </label>
+                        <input type="checkbox" hidden name="btn" id="navbar-btn--input" class="navbar-input">
+                        <label for="navbar-btn--input" class="navbar__overlay"></label> 
+                        
+                        <nav class="navbar__mobile">
+                            <label for="navbar-btn--input" class="navbar__mobile-close">
+                                <i class="fas fa-times fa-2x"></i>
+                            </label> 
+                            <ul>
+                                <li><a href="index.html">Trang Chủ</a></li>
+                                <li><a href="Introduce.html">Giới Thiệu</a></li>
+                                <li><a href="blog.html">Blog</a></li>
+                                <li><a class="active" href="contact.html">Liên hệ</a></li>
+                                <li><a href="galllery.html">Ảnh</a></li>
+                                <li><a href="news.html">Tin tức</a></li>
+                                <li><a href="#">Cài đặt</a></li>
+                                <li><a href="#" class="js-from-tablet-mobile">Đăng nhập</a></li>
+                            </ul>
+                        </nav>          
+                    </div>
+                      <!-- End navbar-moble-tablet -->
+                </nav>
+            </div>
+            
+           
+        </header>
+
+        <section>
+            <div class="container-bg container-contact">
+                <div class="grid wide content">
+                    <h1 class="title wow animate__fadeInUp">Liên Hệ</h1>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="grid wide">
+                <div class="row sm-gutter wow animate__zoomIn animate__delay-0.8s">
+                    <div class="col l-4">
+                        <div class="content-inner">
+                            <div class="sub-tittle">Nói chuyện với nhóm chúng tôi</div>
+                            <div class="tittle">
+                                <h2>Bất Kỳ Câu Hỏi Nào? Vui Lòng Liên Hệ</h2>
+                            </div>
+                            <div class="tittle-decs">
+                                <img src="https://pacificcross.com.vn/wp-content/uploads/2020/11/b2ap3_large_shutterstock_271251743.jpg" alt="image">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-8 m-11 c-11 contact__info">
+                        <form action="javascript:void(0);">
+                           <h3>Nhập thông tin liên hệ</h3>
+                            <div class="row">
+                                <div class="col l-6 m-6 c-12 form-groups">
+                                    <label for="fullname">Tên đầy đủ (<span>*</span>)</label>
+                                    <input id="search" name="" type="text" placeholder="VD: Cao Ngọc Sơn"> 
+                                </div>
+                                <div class="col l-6 m-6 c-12 form-groups">
+                                    <label for="email">Nhập địa chỉ email (<span>*</span>)</label>
+                                    <input type="email" id="search" name="" placeholder="admin@gmail.com">
+                                </div>
+                                <div class="col l-6 m-6 c-12 form-groups">
+                                    <label for="phone">Nhập số điện thoại (<span>*</span>)</label>
+                                    <input id="search" type="text" name="" placeholder="VD: 0799399..."> 
+                                </div>
+                                <div class="col l-6 m-6 c-12 form-groups">
+                                    <label for="date">Nhập ngày tháng năm (<span>*</span>)</label>
+                                    <input id="search" name="date" type="date" class="form-control">
+                                </div>
+                                <div class="col l-12 m-12 c-12 form-controls">
+                                    <textarea name="your-message" placeholder="Viết tin nhắn"></textarea>
+                                </div>
+                                <div class="col l-3 form-actions">
+                                    <input type="submit" id="search" value="Gửi tin nhắn" onclick="searching()">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section style="margin: 6rem 0;">
+            <div class="grid wide">
+                <div class="row wow animate__zoomIn animate__delay-0.9s">
+                    <div class="col l-4 m-12 c-12">
+                        <div class="container-address">
+                            <div>
+                                <span><i class="fa-solid fa-location-dot"></i></span>
+                            </div>
+                            <div>
+                                <h3>Địa chỉ</h3>
+                                <span>371 Nguyễn Kiệm, Gò Vấp</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-4 m-12 c-12">
+                        <div class="container-address">
+                            <div>
+                                <span><i class="fa-solid fa-phone"></i></span>
+                            </div>
+                            <div>
+                                <h3>Hotline</h3>
+                                <span>1900 9999</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-4 m-12 c-12">
+                        <div class="container-address">
+                            <div>
+                                <span><i class="fa-solid fa-at"></i></span>
+                            </div>
+                            <div>
+                                <h3>Email</h3>
+                                <span>Admin@Ou.edu.vn</span>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </section>
+
+        <section>
+            <div class="map wow animate__zoomIn animate__delay-0.8s">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52723.18022491253!2d106.67590872297627!3d10.836254958059579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc9ef195798144b1f!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBN4bufIFRQLkhDTSAtIEPGoSBz4bufIDM!5e0!3m2!1svi!2s!4v1660310724809!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+        
+        <footer class="footer wow animate__fadeInUp">
+            <div class="grid wide footer__content">
+                <div class="row">
+                    <div class="col l-3 m-6 c-12">
+                        <h3 class="footer__heading">Thông tin liên hệ</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="#" class="footer-item__link">
+                                    <i class="footer-item-icon fa-solid fa-location-dot"></i>
+                                   Địa chỉ: 371 Nguyễn Kiệm
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#" class="footer-item__link">
+                                    <i class="footer-item-icon fa-solid fa-phone"></i>
+                                   Hotline: 1900 9999
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#" class="footer-item__link">
+                                    <i class="footer-item-icon fa-solid fa-envelope"></i>
+                                    email: admin@ou.edu.vn
+                                </a>
+                            </li> 
+                        </ul>
+                    </div>
+                    <div class="col l-3 m-6 c-12">
+                        <h3 class="footer__heading">Chăm sóc khách hàng</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="#" class="footer-item__link">Trung Tâm Trợ Giúp</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#" class="footer-item__link">Góp ý</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#" class="footer-item__link">Hướng dẫn</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#" class="footer-item__link">Quy định</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#" class="footer-item__link">Bảo mật thông tin</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-3 m-6 c-12">
+                        <h3 class="footer__heading">Vào trên ứng dụng Riviu</h3>
+                        <div class="footer__download">
+                            <img src="images/QR_code.png" alt="" class="footer__download-qr">
+                            <div class="footer__download-apps">
+                                <a href="" class="footer__download-app-link">
+                                    <img src="images/App store.png" alt="App store" class="footer__download-app-img">
+                                </a>
+                                <a href="" class="footer__download-app-link">
+                                    <img src="images/google_play.png" alt="Google play" class="footer__download-app-img">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-6 c-12">
+                        <h3 class="footer__heading">Giấy phép</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="#" class="footer-item__link">MXH 363/GP-BTTTT</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#" class="footer-item__link"><img src="images/logoCCDV.png" alt="CCDV"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="grid wide" style="margin-top:30px;">
+                <div class="row">
+                    <ul class="footer-list--row">
+                        <li class="footer-item">
+                            <a href="#" class="footer-item__link">
+                            <i class="footer-item-icon fab fa-facebook"></i></a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="#" class="footer-item__link">
+                            <i class="footer-item-icon fab fa-instagram"></i></a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="#" class="footer-item__link">
+                            <i class="footer-item-icon fab fa-youtube"></i></a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="#" class="footer-item__link">
+                            <i class="footer-item-icon fab fa-google"></i></a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="#" class="footer-item__link">
+                            <i class="footer-item-icon fab fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="grid wide">
+                        <p class="footer__text">
+                            &copy; Công Ty TNHH ST RIVIU <br>
+                            Design by NS - TT
+                </div>
+            </div>
+            <a id="gototop" href="#"><i class="fas fa-angle-up"></i></a>
+          </footer>
+    </div>
+      <!-- Box-province -->
+      <div class="modal-popup js-modal">
+        <!-- <div class="modal-overlay"> -->
+            <div class="modal-content js-modal-container" style="width: 480px">
+                <div class="modal-header">
+                    <p style="text-align: center; font-size: 1.4rem;">Chọn khu vực</p>
+                    <p class="btn-right">
+                        <i class="fa-solid fa-xmark js-modal-close"></i>
+                    </p>
+                </div>
+                <div class="modal-info" style="height: 400px">
+                    <div class="province-content">
+                        <div class="search-province">
+                            <span class="search-btn-icon fa fa-search "></span>
+                            <input type="text"  placeholder="Nhập khu vực cần tìm" class="search-input"/>
+                        </div>
+                        <div class="list-province mt-2">
+                            <div class="province-item">
+                                <div class="title-item-hover">
+                                    Hồ Chí Minh
+                                </div>
+                            </div>
+                            <div class="province-item">
+                                <div class="title-item-hover">
+                                    Hà Nội
+                                </div>
+                            </div>
+                            <div class="province-item">
+                                <div class="title-item-hover">
+                                Vũng Tàu
+                                </div>
+                            </div>
+                            <div class="province-item">
+                                <div class="title-item-hover">
+                                Nha Trang
+                                </div>
+                            </div>
+                            <div class="province-item">
+                                <div class="title-item-hover">
+                                Đà Lạt
+                                </div>
+                            </div>
+                            <div class="province-item">
+                                <div class="title-item-hover">
+                                Đồng Tháp
+                                </div>
+                            </div>
+                            <div class="province-item">
+                                <div class="title-item-hover">
+                               Biên Hòa
+                                </div>
+                            </div>
+                            <div class="province-item">
+                                <div class="title-item-hover">
+                               Phú Quốc
+                                </div>
+                            </div>
+                            <div class="province-item">
+                                <div class="title-item-hover">
+                              Lâm Đồng
+                                </div>
+                            </div>
+                            <div class="province-item">
+                                <div class="title-item-hover">
+                               Ninh Thuận
+                                </div>
+                            </div>
+                            <div class="province-item">
+                                <div class="title-item-hover">
+                                    Hải Phòng
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <!-- </div> -->
+        </div>
+    </div>
+    <!-- End-province -->
+
+    <!-- From Đăng nhập -->
+    <div class="container-from js-modals">
+            <form action="" method="POST" class="form js-modals-container" id="form">
+                <h3 class="headingg">Đăng nhập</h3>
+                <div class="spacer"></div>
+                
+                <button class="form-social">
+                    <i class="fab fa-google form-social-icon"></i>
+                    <span class="form-social-text">Đăng nhập với Google</span>
+                </button>
+                <button class="form-social" style="background-color:var(--primary-color);">
+                    <i class="fab fa-facebook form-social-icon"></i>
+                    <span class="form-social-text">Đăng nhập với Facebook</span>
+                </button>
+                <div class="spacer"></div>
+    
+                <div class="form-group">
+                    <label for="email" class="form-label">Tên đăng nhập</label>
+                    <input id="email" name="email" type="text" placeholder="VD: Sơn Thắng" class="form-control">
+                </div>
+        
+                <div class="form-group">
+                    <label for="password" class="form-label">Mật khẩu</label>
+                    <input id="password" name="password" type="password" placeholder="Nhập mật khẩu" class="form-control">         
+                </div>
+                
+                <button class="form-submit">Đăng nhập</button>
+                <p class="form-already">
+                    <span>Bạn có sẵn sàng để tạo một tài khoản?</span>
+                    <a href="#" class="form-login-link">Login</a>
+                </p>
+            </form>
+    </div>
+    <!-- End From Đăng Nhập -->
+
+    <!-- Loader -->
+    <div class="loadingBx">
+        <div class="loading"></div>
+    </div>
+
+        <!-- Messenger Plugin chat Code -->
+        <div id="fb-root"></div>
+
+        <!-- Your Plugin chat code -->
+        <div id="fb-customer-chat" class="fb-customerchat">
+        </div>
+    
+        <script>
+        var chatbox = document.getElementById('fb-customer-chat');
+        chatbox.setAttribute("page_id", "108145088682619");
+        chatbox.setAttribute("attribution", "biz_inbox");
+        </script>
+    
+        <!-- Your SDK code -->
+        <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+            xfbml            : true,
+            version          : 'v14.0'
+            });
+        };
+    
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+        </script>    
+
+        <!-- Sweet Alert -->
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+        <script src="js/main.js"></script>
+  </body>
+</html>
+
+
+
+
+
