@@ -97,19 +97,21 @@ a {
 
 /* Loader */
 .loadingBx {
-  width: 100%;
-  height: 100%;
-  background: var(--white-color);
   position: fixed;
   top: 0;
   left: 0;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: var(--white-color);
   z-index: 1000;
 }
 
 .loading {
   position: relative;
-  top: 35%;
-  left: 48%;
+  top: -130px;
   width: 80px;
   height: 80px;
   border-radius: 50%;

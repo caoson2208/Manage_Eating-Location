@@ -1,7 +1,9 @@
 $(window).on("load", function (event) {
   $(".loadingBx").delay(500).fadeOut(300);
 });
-//Add class anmate + wow js
+/*------------------------------------------
+          Add class anmate + wow js
+-------------------------------------------- */
 $(document).ready(function () {
   $(".category").addClass("wow animate__zoomIn animate__delay-0.9s");
   $(".product-item").addClass("wow animate__flipInY");
