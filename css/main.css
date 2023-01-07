@@ -18,7 +18,7 @@
 }
 
 .header__sort-bar-top {
-   top: 74px;
+  top: 74px;
 }
 
 .header__sort-item {
@@ -40,7 +40,7 @@
   position: relative;
 }
 
-.header__sort-item--active  .header__sort-link {
+.header__sort-item--active .header__sort-link {
   color: var(--primary-color);
 }
 
@@ -55,13 +55,12 @@
 }
 
 .container-home-page {
-   background: url(../images/slider-01.png) no-repeat fixed center;
-   background-size: 100%;
-   width: 100%;
-   height: 100vh;
-   object-fit: cover;
+  background: url(../images/slider-01.png) no-repeat fixed center;
+  background-size: 100%;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
 }
-
 
 /* Slider */
 .image-slider {
@@ -135,22 +134,21 @@
   background-color: var(--gray-color);
 }
 
-
 /* Content */
 .app__container {
   background-color: #eeeeee;
 }
 
 .app__content {
-    padding-top: 30px;
+  padding-top: 30px;
 }
 
-.category { 
+.category {
   background-color: var(--white-color);
   border-radius: 2px;
 }
 
-.category__heading { 
+.category__heading {
   font-size: 1.6rem;
   font-weight: 600;
   color: var(--text-color);
@@ -161,12 +159,12 @@
   text-align: center;
 }
 
-.category__heading  > img {
-    position: absolute;
-    left: 8px;
-    top: 5px;
-    width: 35px;
-    height: 35px;
+.category__heading > img {
+  position: absolute;
+  left: 8px;
+  top: 5px;
+  width: 35px;
+  height: 35px;
 }
 
 .category-item__link {
@@ -185,7 +183,7 @@
 
 .category-img img {
   width: 100%;
-  transition: all .4s ease;
+  transition: all 0.4s ease;
 }
 
 .category-img:hover img {
@@ -193,7 +191,7 @@
 }
 
 .category-title {
-  margin-top: 6px ;
+  margin-top: 6px;
   font-size: 1.4rem;
   padding: 0 2px;
   font-weight: 550;
@@ -203,7 +201,7 @@
 .filter {
   display: flex;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.04);  
+  background-color: rgba(0, 0, 0, 0.04);
 }
 
 .filter__lable > a {
@@ -213,10 +211,10 @@
   /* margin-right: 16px; */
   padding: 12px 22px;
 }
- 
-.filter__lable--active  a {
-   background-color: var(--white-color);
-   border-bottom: 2px solid var(--primary-color);
+
+.filter__lable--active a {
+  background-color: var(--white-color);
+  border-bottom: 2px solid var(--primary-color);
 }
 
 /* Seletion */
@@ -238,54 +236,54 @@
 
 /* Mobile-category */
 .mobile-category__list {
-    display: flex;
-    padding-left: 0;
-    max-width: 100%;
-    overflow-x: auto;
+  display: flex;
+  padding-left: 0;
+  max-width: 100%;
+  overflow-x: auto;
 }
 
 .mobile-category__list::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 .mobile-category__item {
-    flex-shrink: 0;
-    margin-left: 10px;
+  flex-shrink: 0;
+  margin-left: 10px;
 }
 
 .mobile-category__item:nth-of-type(3n + 1) .mobile-category__link {
-    background-color: #87afd8;
+  background-color: #87afd8;
 }
 
 .mobile-category__item:nth-of-type(3n + 2) .mobile-category__link {
-    background-color: #76C9BD;
+  background-color: #76c9bd;
 }
 
 .mobile-category__item:nth-of-type(3n + 3) .mobile-category__link {
-    background-color: #88CF81;
-} 
+  background-color: #88cf81;
+}
 
 .mobile-category__link {
-    text-decoration: none;
-    color: var(--white-color);
-    font-size: 1.4rem;
-    line-height: 2rem;
-    text-align: center;
-    overflow: hidden;
-    width: 110px;
-    height: 4rem;
-    display: block;
-    border-radius: 5px;
-    font-weight: 300;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
-    padding: 0 6px;
+  text-decoration: none;
+  color: var(--white-color);
+  font-size: 1.4rem;
+  line-height: 2rem;
+  text-align: center;
+  overflow: hidden;
+  width: 110px;
+  height: 4rem;
+  display: block;
+  border-radius: 5px;
+  font-weight: 300;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  padding: 0 6px;
 }
 
 /*Home-product-item */
 .product {
-  margin-bottom: 20px ;
+  margin-bottom: 20px;
 }
 
 .product-item {
@@ -303,8 +301,8 @@
   box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.3);
 }
 
-.product-item__img  {
-  position: relative; 
+.product-item__img {
+  position: relative;
 }
 
 .product-item__img:hover .product__item-sale-off {
@@ -318,9 +316,9 @@
 
 .product-item__img::after {
   content: "";
-  position: absolute ;
+  position: absolute;
   left: 0;
-  top:0;
+  top: 0;
   width: 100%;
   height: 0%;
   background-color: rgba(0, 0, 0, 0.3);
@@ -335,16 +333,16 @@
   width: 100%;
 }
 
-.produc-item-info  {
+.produc-item-info {
   position: absolute;
   color: var(--white-color);
-  top: 20% ;
-  left: 20%; 
+  top: 20%;
+  left: 20%;
   z-index: 10;
   display: none;
 }
 
-ul.produc-item-menu > li  {
+ul.produc-item-menu > li {
   padding: 6px 12px;
   background-color: #ee4d2d;
   font-size: 1.3rem;
@@ -365,22 +363,22 @@ div.produc-item-order > i {
   margin-right: 8px;
 }
 
-ul.produc-item-menu > li:hover, 
+ul.produc-item-menu > li:hover,
 div.produc-item-order:hover {
-    background-color: var(--secondary-color);
+  background-color: var(--secondary-color);
 }
 
 .product-item-name {
-    color: var(--black-color);
-    font-size: 1.4rem;
-    font-weight: 550;
-    line-height: 1.8rem;
-    height: 2rem;
-    padding: 4px 0 4px 8px;
-    overflow: hidden; 
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 1;
+  color: var(--black-color);
+  font-size: 1.4rem;
+  font-weight: 550;
+  line-height: 1.8rem;
+  height: 2rem;
+  padding: 4px 0 4px 8px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
 }
 
 .product-item-name > i {
@@ -389,7 +387,7 @@ div.produc-item-order:hover {
 }
 
 .product-item-name:hover {
-    transform: scale(1.03);
+  transform: scale(1.03);
 }
 
 .product-item-address {
@@ -405,12 +403,12 @@ div.produc-item-order:hover {
 }
 
 .product-item__evaluate {
-    display: flex;
-    align-items: center;
-    padding: 6px 8px;
+  display: flex;
+  align-items: center;
+  padding: 6px 8px;
 }
 
-.product-item-user--img  {
+.product-item-user--img {
   width: 17%;
 }
 
@@ -421,12 +419,12 @@ div.produc-item-order:hover {
 }
 
 .product-item-user {
-    width: 83%;
+  width: 83%;
 }
- 
+
 .product-item-user--name {
   font-size: 1.2rem;
-  color:var(--black-color);
+  color: var(--black-color);
   font-weight: 550;
 }
 
@@ -435,17 +433,17 @@ div.produc-item-order:hover {
   color: #888888;
   font-size: 1.2rem;
   overflow: hidden;
-  display: -webkit-box ;
+  display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
 }
 
-.product-item-user--comment  span {
+.product-item-user--comment span {
   font-weight: 600;
   color: var(--black-color);
   font-size: 1.3rem;
 }
- 
+
 .product-item-count {
   display: flex;
   justify-content: space-between;
@@ -455,20 +453,20 @@ div.produc-item-order:hover {
 
 .produc-item-comment,
 .produc-item-photo {
-    padding: 6px;
-    font-size: 1.4rem;
-    color: var(--gray-color);
+  padding: 6px;
+  font-size: 1.4rem;
+  color: var(--gray-color);
 }
 
 .produc-item-comment:hover,
-.produc-item-photo:hover{
+.produc-item-photo:hover {
   color: var(--black-color);
 }
 
 .produc-item-comment > i,
 .produc-item-photo > i,
-.produc-item-mark > i{
-    margin: 8px 4px;
+.produc-item-mark > i {
+  margin: 8px 4px;
 }
 
 .produc-item-mark {
@@ -480,7 +478,7 @@ div.produc-item-order:hover {
 }
 
 .produc-item-mark:hover {
-   color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 .product__item-sale-off {
@@ -490,7 +488,7 @@ div.produc-item-order:hover {
   width: 40px;
   height: 36px;
   text-align: center;
-  background-color:var(--primary-color);
+  background-color: var(--primary-color);
   border-top-right-radius: 2px;
   animation: swing infinite 3s;
   transition: all ease 0.3s;
@@ -522,9 +520,9 @@ div.produc-item-order:hover {
   bottom: -4px;
   border-width: 0 20px 4px;
   border-style: solid;
-  border-color: transparent var(--primary-color) transparent var(--primary-color);
+  border-color: transparent var(--primary-color) transparent
+    var(--primary-color);
 }
-
 
 /* See more */
 .btn-see-more {
@@ -546,21 +544,20 @@ div.produc-item-order:hover {
   color: #fff;
   border-radius: 5px;
   padding: 10px 25px;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 500;
   background: transparent;
   cursor: pointer;
   transition: all 0.3s ease;
   position: relative;
   display: inline-block;
-   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-   7px 7px 20px 0px rgba(0,0,0,.1),
-   4px 4px 5px 0px rgba(0,0,0,.1);
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
   outline: none;
 }
 
 .btn-more {
-  background: rgb(255,151,0);
+  background: rgb(255, 151, 0);
   border: none;
   z-index: 1;
   font-size: 1.4rem;
@@ -578,9 +575,8 @@ div.produc-item-order:hover {
   border-radius: 5px;
   background-color: #eaf818;
   background-image: linear-gradient(315deg, #eaf818 0%, #f6fc9c 74%);
-   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-   7px 7px 20px 0px rgba(0,0,0,.1),
-   4px 4px 5px 0px rgba(0,0,0,.1);
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
 }
 
@@ -594,42 +590,40 @@ div.produc-item-order:hover {
   height: 100%;
 }
 
-
-
-
 /*--------------------------------------
 Introduce
   -------------------------------------- */
 .container-introduce {
-    background: url(https://ipos.vn/wp-content/uploads/2022/03/nha-hang-han-quoc-3.jpg) no-repeat fixed center;
-    background-size: 100%;
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
+  background: url(https://ipos.vn/wp-content/uploads/2022/03/nha-hang-han-quoc-3.jpg)
+    no-repeat fixed center;
+  background-size: 100%;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
 }
-  
+
 .content {
-    position: relative;
-    top: 40%;
-    z-index: 2;
-    line-height: 1.2;
-    text-align: center;
-    color: var(--white-color);
+  position: relative;
+  top: 40%;
+  z-index: 2;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--white-color);
 }
 
 .title {
-    font-size: 7.2rem;
-    color: var(--yellow-color);
-    font-family: "Charmonman", cursive;
-    animation-delay: 0.2s;
+  font-size: 7.2rem;
+  color: var(--yellow-color);
+  font-family: "Charmonman", cursive;
+  animation-delay: 0.2s;
 }
 
 .sub-title {
-    margin-top: 8px;
-    font-size: 1.8rem;
-    font-weight: 600;
-    font-family: "Charmonman", cursive;
-    animation-delay: 0.7s;
+  margin-top: 8px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  font-family: "Charmonman", cursive;
+  animation-delay: 0.7s;
 }
 
 .heading {
@@ -637,37 +631,37 @@ Introduce
   color: var(--gray-color);
   margin-bottom: 8px;
   background-image: linear-gradient(
-        45deg,
-        #CA4246 16.666%, 
-        #E16541 16.666%, 
-        #E16541 33.333%, 
-        #F18F43 33.333%, 
-        #F18F43 50%, 
-        #8B9862 50%, 
-        #8B9862 66.666%, 
-        #476098 66.666%, 
-        #476098 83.333%, 
-        #A7489B 83.333%);
+    45deg,
+    #ca4246 16.666%,
+    #e16541 16.666%,
+    #e16541 33.333%,
+    #f18f43 33.333%,
+    #f18f43 50%,
+    #8b9862 50%,
+    #8b9862 66.666%,
+    #476098 66.666%,
+    #476098 83.333%,
+    #a7489b 83.333%
+  );
 }
 
-.heading > h1 { 
-    text-align: center;
-    font-size: 6rem;
-    line-height: 60px;
-    font-weight: 600;
-    margin: 30px 10px 30px;
-    text-transform: uppercase;
-    text-shadow: 1px 4px 2px var(--black-color);
-    background: linear-gradient(45deg, #f3ec78, #af4261);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
-    -webkit-text-fill-color: transparent;
-    
+.heading > h1 {
+  text-align: center;
+  font-size: 6rem;
+  line-height: 60px;
+  font-weight: 600;
+  margin: 30px 10px 30px;
+  text-transform: uppercase;
+  text-shadow: 1px 4px 2px var(--black-color);
+  background: linear-gradient(45deg, #f3ec78, #af4261);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 
-.heading > h1::after { 
+.heading > h1::after {
   content: "";
   display: block;
   height: 5px;
@@ -680,8 +674,8 @@ Introduce
   background-color: var(--white-color);
 }
 
-.about-us__content  h2 {
-  font-size:2.5rem; 
+.about-us__content h2 {
+  font-size: 2.5rem;
   color: var(--black-color);
   padding: 15px 0;
   margin-left: 50px;
@@ -689,7 +683,7 @@ Introduce
 }
 
 .about-us__content h5 {
-  font-size:2.5rem; 
+  font-size: 2.5rem;
   font-family: "Charmonman", cursive;
   color: var(--black-color);
   padding: 15px 0;
@@ -711,19 +705,20 @@ Introduce
 }
 
 .about-us__img > img {
-    width: 100%;
+  width: 100%;
 }
 
 /*--------------------------------------
     Blog
 -------------------------------------- */
 .container-blog {
-    background: url(https://blog.beemart.vn/wp-content/uploads/2019/08/che-do-an-uong-lanh-manh-1.jpg) no-repeat  fixed center ;
-    background-size: 100%;
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-    margin-bottom: 10rem;
+  background: url(https://blog.beemart.vn/wp-content/uploads/2019/08/che-do-an-uong-lanh-manh-1.jpg)
+    no-repeat fixed center;
+  background-size: 100%;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  margin-bottom: 10rem;
 }
 
 .blog {
@@ -754,15 +749,15 @@ Introduce
 }
 
 .blog-item__img span {
-    position: absolute;
-    color: var(--white-color);
-    background-color: var(--primary-color);
-    font-size: 1.8rem;
-    line-height: 2.4rem;
-    top: 0px;
-    left: 0px;
-    padding: 8px 24px;
-    border-bottom-right-radius: 20px;
+  position: absolute;
+  color: var(--white-color);
+  background-color: var(--primary-color);
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  top: 0px;
+  left: 0px;
+  padding: 8px 24px;
+  border-bottom-right-radius: 20px;
 }
 
 .blog-item__details {
@@ -779,19 +774,19 @@ Introduce
 }
 
 .blog-item__details-status > li {
-   padding: 12px 8px;
-   font-size: 1.3rem;
+  padding: 12px 8px;
+  font-size: 1.3rem;
 }
 
-.blog-item__details-status > li >:hover {
-    color: var(--primary-color);
+.blog-item__details-status > li > :hover {
+  color: var(--primary-color);
 }
 
 a.blog-item__read-more {
-    display: block;
-    padding: 12px 0 0;
-    font-size: 1.6rem;
-    color: var(--primary-color);  
+  display: block;
+  padding: 12px 0 0;
+  font-size: 1.6rem;
+  color: var(--primary-color);
 }
 
 a.blog-item__read-more:hover {
@@ -800,13 +795,13 @@ a.blog-item__read-more:hover {
 
 /* pagination */
 .pagination {
-    margin: 50px 0;
+  margin: 50px 0;
 }
 
 .pagination-menu {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .pagination-menu > li {
@@ -815,7 +810,7 @@ a.blog-item__read-more:hover {
 
 .pagination-menu > li > a {
   display: block;
-  padding: 10px 20px ;
+  padding: 10px 20px;
   line-height: 30px;
   font-size: 1.6rem;
   font-weight: 500;
@@ -827,35 +822,35 @@ a.blog-item__read-more:hover {
 }
 
 .pagination-menu > li > a:hover {
-    background-color: var(--primary-color);
-    color: var(--white-color);
+  background-color: var(--primary-color);
+  color: var(--white-color);
 }
 
 .pagination-menu > li:nth-child(2) > a {
-    background-color: var(--primary-color);
-    color: var(--white-color);
+  background-color: var(--primary-color);
+  color: var(--white-color);
 }
 
 /* Blog right */
 .blog-right-sidebar {
-     margin-top: 20px;
+  margin-top: 20px;
 }
 
 .search__type {
-   width: 100%;
-   height: 40px;
-   position: relative;
+  width: 100%;
+  height: 40px;
+  position: relative;
 }
 
 .search__type input[type="text"] {
-   padding: 10px;
-   border: 1px solid var(--gray-color);
-   width: 100%;
+  padding: 10px;
+  border: 1px solid var(--gray-color);
+  width: 100%;
 }
 
 .search__type i {
   position: absolute;
-  top:0;
+  top: 0;
   right: 10px;
   line-height: 40px;
   font-size: 1.8rem;
@@ -863,15 +858,15 @@ a.blog-item__read-more:hover {
 }
 
 .search-btn {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 
 .search-btn input[type="submit"] {
-   width: 100%;
-   padding: 12px 0;
-   border: 1px solid var(--primary-color);
-   transition: all ease 0.3s;
-   cursor: pointer;
+  width: 100%;
+  padding: 12px 0;
+  border: 1px solid var(--primary-color);
+  transition: all ease 0.3s;
+  cursor: pointer;
 }
 
 .search-btn input[type="submit"]:hover {
@@ -895,17 +890,17 @@ a.blog-item__read-more:hover {
 }
 
 .newest__menu-items {
-  display: flex; 
+  display: flex;
   align-items: center;
   overflow: hidden;
 }
 
 .newest__menu-items img {
-    width: 130px;
+  width: 130px;
 }
 
 .newest__menu-items img:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .newest__menu-items--details {
@@ -914,10 +909,10 @@ a.blog-item__read-more:hover {
 }
 
 .newest__menu-items--details > a {
-   color: var(--text-color);
-   font-weight: 600;
-   font-size: 1.8rem;
-   line-height: 2rem;
+  color: var(--text-color);
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 2rem;
 }
 
 .newest__menu-items--details:hover > a {
@@ -925,9 +920,9 @@ a.blog-item__read-more:hover {
 }
 
 .newest__menu-items--details > span {
-   font-size: 1.4rem;
-   display: block;
-   padding: 8px 0;
+  font-size: 1.4rem;
+  display: block;
+  padding: 8px 0;
 }
 
 /* Category */
@@ -948,7 +943,7 @@ a.blog-item__read-more:hover {
 .category__menu-items {
   padding: 18px 0;
   font-size: 1.8rem;
-  list-style-image: url(../images/menu-items-bullet.gif);;
+  list-style-image: url(../images/menu-items-bullet.gif);
 }
 
 .category__menu-items > a {
@@ -995,13 +990,13 @@ a.blog-item__read-more:hover {
 }
 
 .Tag-clouds__menu > a {
-    display: inline-block;
-    color: var(--text-color);
-    padding: 8px 12px;
-    border-radius: 20px;
-    background-color: var(--gray-input-color);
-    margin: 8px 4px;
-    font-size: 1.4rem;
+  display: inline-block;
+  color: var(--text-color);
+  padding: 8px 12px;
+  border-radius: 20px;
+  background-color: var(--gray-input-color);
+  margin: 8px 4px;
+  font-size: 1.4rem;
 }
 
 .Tag-clouds__menu > a:hover {
@@ -1013,7 +1008,8 @@ a.blog-item__read-more:hover {
     Contact
 -------------------------------------- */
 .container-contact {
-  background: url(https://kenh14cdn.com/thumb_w/660/2019/6/3/4-1559551546281832979526.jpg) no-repeat  fixed center ;
+  background: url(https://kenh14cdn.com/thumb_w/660/2019/6/3/4-1559551546281832979526.jpg)
+    no-repeat fixed center;
   background-size: 100%;
   width: 100%;
   height: 100vh;
@@ -1036,7 +1032,7 @@ a.blog-item__read-more:hover {
 }
 
 .tittle-decs > img {
-  width: 400px ;
+  width: 400px;
   height: 500px;
 }
 
@@ -1072,11 +1068,11 @@ a.blog-item__read-more:hover {
 }
 
 input:hover {
-    border-color: var(--primary-color);
+  border-color: var(--primary-color);
 }
 
 .form-groups {
-    margin-top: 12px;
+  margin-top: 12px;
 }
 
 .form-controls textarea {
@@ -1091,27 +1087,27 @@ input:hover {
 }
 
 textarea:hover {
-    border-color: var(--primary-color);
+  border-color: var(--primary-color);
 }
 
-.form-actions input{
-    background-color: var(--primary-color);
-    color: var(--white-color);
-    font-size: 1.8rem;
-    font-weight: 600;
-    border: none;
-    margin-top: 16px;
-    line-height: 2.7rem;
-    cursor: pointer;
+.form-actions input {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  font-size: 1.8rem;
+  font-weight: 600;
+  border: none;
+  margin-top: 16px;
+  line-height: 2.7rem;
+  cursor: pointer;
 }
 
 .container-address {
-    display: flex;
-    align-items: center;
-    border: 1px solid var(--gray-color);
-    padding: 30px 0px;
-    border-radius: 10px;
-    margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--gray-color);
+  padding: 30px 0px;
+  border-radius: 10px;
+  margin-top: 2rem;
 }
 
 .container-address i {
@@ -1126,12 +1122,12 @@ textarea:hover {
 }
 
 .container-address h3 {
-   font-size: 2.2rem;
-   margin: 8px 0;
-   line-height: 1.8rem;
-   margin-left: 14px;
-   color: var(--gray-color);
-   font-weight: 800;
+  font-size: 2.2rem;
+  margin: 8px 0;
+  line-height: 1.8rem;
+  margin-left: 14px;
+  color: var(--gray-color);
+  font-weight: 800;
 }
 
 .container-address span {
@@ -1151,7 +1147,8 @@ textarea:hover {
     Gallery
 -------------------------------------- */
 .container-gallery {
-  background: url(http://colombo.vn/upload/20922/20180814/Table-1.jpg) no-repeat fixed center;
+  background: url(http://colombo.vn/upload/20922/20180814/Table-1.jpg) no-repeat
+    fixed center;
   background-size: 100%;
   width: 100%;
   height: 100vh;
@@ -1167,30 +1164,30 @@ textarea:hover {
 }
 
 .gl-image {
-  width: 34rem;
+  width: 390px;
   margin: 10px;
 }
 
 .gl-image > img {
   width: 100%;
-  border: .3rem solid var(--primary-color);
-  transition: .3s;
+  border: 3px solid var(--primary-color);
+  transition: 0.3s;
+  cursor: pointer;
 }
 
 .gl-image > img:hover {
-  filter: graysacale(100%);
   transform: scale(1.1);
-  border: 0;
+  border: none;
   border-radius: 10px;
   box-shadow: 5px 5px 5px var(--shadow-color);
 }
 
-#gallery {
+.gallery {
   position: fixed;
-  background-color: var(--shadow-color);
+  background-color: rgba(0, 0, 0, 0.7);
   width: 100%;
   height: 100%;
-  color:white;
+  color: var(--white-color);
   top: 0;
   z-index: 10;
   display: flex;
@@ -1200,46 +1197,48 @@ textarea:hover {
   transform: scale(0.8);
   transition: 1s;
   pointer-events: none;
+  cursor: pointer;
 }
 
-#gallery.show {
+.gallery.show {
   opacity: 1;
   transform: scale(1);
   pointer-events: auto;
 }
 
-#gl-close {
+.btn-close {
   position: fixed;
   top: 15px;
   right: 25px;
-  font-size: 35px;
+  font-size: 2.5rem;
 }
 
-#gl-close:hover {
+.btn-close:hover {
   color: var(--primary-color);
 }
 
-.gl-control {
+.btn-next,
+.btn-prev {
   position: absolute;
-  font-size: 35px;
+  font-size: 3rem;
   color: rga(255, 255, 255, 0.8);
 }
 
-.gl-control:hover {
+.btn-next:hover,
+.btn-prev:hover {
   color: var(--primary-color);
 }
 
-.gl-control#gl-prev {
+.btn-prev {
   left: 15px;
-  z-index: 1000;
 }
 
-.gl-control#gl-next {
+.btn-next {
   right: 15px;
-  z-index: 1000;
 }
 
-.gl-control.hide {
+.btn-prev.hide,
+.btn-next.hide {
   display: none;
 }
 
@@ -1248,7 +1247,8 @@ textarea:hover {
 -------------------------------------- */
 /* MAIN */
 .container-news {
-  background: url(http://hoctienghanquoc.org/uploads/tin-tuc/2016_07/van-hoa-an-uong-cua-nguoi-han1.jpg) no-repeat fixed center;
+  background: url(http://hoctienghanquoc.org/uploads/tin-tuc/2016_07/van-hoa-an-uong-cua-nguoi-han1.jpg)
+    no-repeat fixed center;
   background-size: 100%;
   width: 100%;
   height: 100vh;
@@ -1263,7 +1263,7 @@ textarea:hover {
 #n-main {
   display: flex;
   background-color: white;
-  font-family: 'Be Vietnam';
+  font-family: "Be Vietnam";
   width: 1200px;
   height: 500px;
   margin: 0 auto;
@@ -1323,7 +1323,7 @@ textarea:hover {
 #n-main img {
   width: 100%;
   height: 100%;
-  filter:brightness(75%);
+  filter: brightness(75%);
 }
 
 #n-main a {
@@ -1345,11 +1345,10 @@ textarea:hover {
   margin: 5px;
 }
 
-.n-thump a{
-  position:static !important;
+.n-thump a {
+  position: static !important;
   font-size: 28px;
   color: white;
-  
 }
 
 .n-thump p:first-child {
@@ -1374,8 +1373,8 @@ textarea:hover {
   transition: 1s;
 }
 /* ------------- */
-#n-mainright .n-thump a{
-  position:static !important;
+#n-mainright .n-thump a {
+  position: static !important;
   font-size: 20px;
   color: white;
 }
@@ -1407,7 +1406,7 @@ textarea:hover {
   padding: 15px 25px;
   margin: 5px;
   color: var(--primary-color);
-  border: 2px solid var(--primary-color)
+  border: 2px solid var(--primary-color);
 }
 
 .n-clonenav a.active {
@@ -1419,8 +1418,7 @@ textarea:hover {
 .clonefoodimg {
   height: 80px;
   width: 80px;
-  padding:5px;
-  
+  padding: 5px;
 }
 
 .clonefood {
@@ -1436,7 +1434,7 @@ textarea:hover {
 .clonedrinkimg {
   height: 80px;
   width: 80px;
-  padding:5px; 
+  padding: 5px;
 }
 
 .clonedrink {
@@ -1448,7 +1446,7 @@ textarea:hover {
   height: 100%;
   padding: 2px;
 }
-.n-cloneleft{
+.n-cloneleft {
   width: 60%;
 }
 .n-cloneleft > div {
@@ -1458,7 +1456,6 @@ textarea:hover {
 
 #clonefoods {
   display: none;
-
 }
 #clonefoods.active {
   display: block;
@@ -1491,7 +1488,8 @@ textarea:hover {
   background-color: var(--primary-color);
 }
 
-#wearther-icon,#weather-temp  {
+#wearther-icon,
+#weather-temp {
   font-size: 55px;
   font-weight: bold;
   color: white;
@@ -1501,12 +1499,12 @@ textarea:hover {
 #weather-place {
   font-size: 30px;
   font-weight: bold;
-  color: white
+  color: white;
 }
 
 #weather-tmain {
   font-size: 15px;
-  color: white
+  color: white;
 }
 
 .weather-title {
@@ -1517,14 +1515,14 @@ textarea:hover {
 .weather-header {
   color: white;
   font-size: 20px;
-  padding: 15px
+  padding: 15px;
 }
 
 @keyframes spin {
-  0%{
+  0% {
     transform: rotate(0deg);
   }
-  100%{
+  100% {
     transform: rotate(360deg);
   }
 }

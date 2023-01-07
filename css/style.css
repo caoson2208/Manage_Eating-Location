@@ -1,25 +1,25 @@
-
 /* ------------------------------------
   Header
  ------------------------------------- */
 .header {
-    padding: 12px 0;
-    background-color: var(--white-color);   
-    box-shadow: 0 0 30px var(--shadow-color);
+  padding: 12px 0;
+  background-color: var(--white-color);
+  box-shadow: 0 0 30px var(--shadow-color);
+  border-radius: 0 0 10rem 10rem;
 }
 
 .header.fixed-top {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 10; 
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
 }
 
 .header-padding {
   padding: 0;
 }
- 
+
 /* ------------------------------------
   Navbar
 ------------------------------------- */
@@ -29,29 +29,29 @@
   z-index: 10;
   justify-content: space-between;
 }
-  
+
 .navbar__logo img {
-    width: 85%;
-    height: 70px;
+  width: 85%;
+  height: 70px;
 }
-  
-.navbar__list >  ul {
-    display: flex;
-    align-items: center;
+
+.navbar__list > ul {
+  display: flex;
+  align-items: center;
 }
 
 .navbar__list a {
-    display: block;
-    padding: 12px;
-    font-weight: 550;
-    border-radius: 2rem;
-    font-size: 1.6rem;
-    color: var(--primary-color);
+  display: block;
+  padding: 12px;
+  font-weight: 550;
+  border-radius: 2rem;
+  font-size: 1.6rem;
+  color: var(--primary-color);
 }
 
 a.active {
-    color: var(--white-color) !important;
-    background: var(--primary-color);
+  color: var(--white-color) !important;
+  background: var(--primary-color);
 }
 
 .navbar__list > ul > li a:hover {
@@ -82,8 +82,6 @@ a.active {
   display: block;
 }
 
-
-
 .navbar__search {
   background-color: var(--gray-input-color);
   border-radius: 10px;
@@ -103,7 +101,6 @@ a.active {
   padding: 10px 8px 8px 10px;
   font-size: 1.8rem;
   color: var(--gray-color);
-
 }
 
 .navbar__search-input {
@@ -124,7 +121,7 @@ a.active {
   color: var(--gray-color);
 }
 
-.navbar__search-button { 
+.navbar__search-button {
   background-color: var(--gray-input-color);
   color: var(--gray-color);
   font-weight: 600;
@@ -148,7 +145,7 @@ a.active {
   font-size: 1.4rem;
   font-weight: 400;
   color: var(--gray-color);
-  border-bottom: 1px solid var(--border-color) ;
+  border-bottom: 1px solid var(--border-color);
   padding: 8px;
 }
 
@@ -161,7 +158,7 @@ a.active {
   display: flex;
   align-items: center;
   padding: 0 8px;
-} 
+}
 
 .navbar__cart-item:hover {
   background-color: var(--yellow-color);
@@ -171,7 +168,7 @@ a.active {
   width: 42px;
   height: 42px;
   margin: 8px 0;
-  border: 1px solid #E8E8E8;
+  border: 1px solid #e8e8e8;
 }
 
 .navbar__cart-item-info {
@@ -187,8 +184,8 @@ a.active {
   padding-right: 12px;
   overflow: hidden;
   display: -webkit-box;
-  -webkit-box-orient:vertical ;
-  -webkit-line-clamp:1 ;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
 }
 
 .navbar__cart-item-body {
@@ -196,8 +193,8 @@ a.active {
 }
 
 .navbar__cart-item-address {
-    color: var(--border-color);
-    font-size: 1.2rem;
+  color: var(--border-color);
+  font-size: 1.2rem;
 }
 
 .navbar__cart-item-remove {
@@ -213,21 +210,19 @@ a.active {
 }
 
 .navbar__cart-view-cart {
-    float: right;
-    margin: 0 12px 12px 0;
-    background-color: var(--primary-color);
-    border: unset !important;
-    border-radius: unset !important;
+  float: right;
+  margin: 0 12px 12px 0;
+  background-color: var(--primary-color);
+  border: unset !important;
+  border-radius: unset !important;
 }
 
 .navbar__cart-view-cart:hover {
-  background-color: #f05D41;
+  background-color: #f05d41;
 }
 
-
-
 .navbar__btn-group > .btn {
-  background-image: linear-gradient(90deg,#f60,#ff9f00);
+  background-image: linear-gradient(90deg, #f60, #ff9f00);
   color: #fff;
 }
 
@@ -278,17 +273,17 @@ label.navbar-btn > i:hover {
 }
 
 .navbar__mobile {
-    position: fixed;
-    top:0;
-    right: 0;
-    bottom:  0;
-    width: 320px;
-    max-width: 100%;
-    background-color: var(--white-color);
-    transform: translateX(100%);
-    opacity: 0;
-    transition: all linear 0.3s;
-    z-index: 2;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 320px;
+  max-width: 100%;
+  background-color: var(--white-color);
+  transform: translateX(100%);
+  opacity: 0;
+  transition: all linear 0.3s;
+  z-index: 2;
 }
 
 .navbar-input:checked ~ .navbar__mobile {
@@ -316,13 +311,12 @@ label.navbar-btn > i:hover {
   right: 10px;
 }
 
-
 /* ------------------------------------
   Footer
 ------------------------------------- */
 .footer {
   padding-top: 16px;
-  border-top: 4px solid var(--primary-color) ;
+  border-top: 4px solid var(--primary-color);
   background: #252428;
   animation-delay: 0.1s;
 }
@@ -396,22 +390,21 @@ label.navbar-btn > i:hover {
   margin: 0 auto;
 }
 
-.footer-list--row  .footer-item  .footer-item-icon {
+.footer-list--row .footer-item .footer-item-icon {
   background-color: var(--primary-color);
   padding: 10px;
   font-size: 2.5rem;
   border-radius: 25%;
 }
 
-.footer-list--row  .footer-item  .footer-item-icon:hover {
-   background-color: var(--secondary-color);
+.footer-list--row .footer-item .footer-item-icon:hover {
+  background-color: var(--secondary-color);
 }
 
 .footer__bottom {
   background-color: var(--black-color);
   padding: 8px 0;
   margin-top: 16px;
-
 }
 
 .footer__text {
@@ -439,11 +432,11 @@ label.navbar-btn > i:hover {
 
 /* SCROLLBAR  */
 ::-webkit-scrollbar {
-  width: 10px; 
+  width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   -webkit-border-radius: 10px;
   border-radius: 10px;
 }
@@ -451,11 +444,11 @@ label.navbar-btn > i:hover {
 ::-webkit-scrollbar-thumb {
   -webkit-border-radius: 10px;
   border-radius: 10px;
-  background: rgba(210, 105, 30, 1 ); 
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+  background: rgba(210, 105, 30, 1);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 }
 
-.all{
+.all {
   overflow: hidden;
 }
 
@@ -478,12 +471,12 @@ label.navbar-btn > i:hover {
 }
 
 .modal-content {
-  background-color:var(--white-color);
+  background-color: var(--white-color);
   margin: 60px auto;
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 16%);
   height: 475px;
-  animation: modalFadeIn ease .4s;  
+  animation: modalFadeIn ease 0.4s;
 }
 
 .modal-header {
@@ -500,8 +493,8 @@ label.navbar-btn > i:hover {
 }
 
 .modal-info {
-    overflow-y: scroll;
-    padding: 10px 15px;
+  overflow-y: scroll;
+  padding: 10px 15px;
 }
 
 .modal-header .btn-right {
@@ -510,14 +503,14 @@ label.navbar-btn > i:hover {
   right: 10px;
   top: 10px;
   cursor: pointer;
-  font-size: 1.5rem ;
+  font-size: 1.5rem;
 }
 
 .search-province {
   align-items: center;
   cursor: pointer;
-  background-color:  #efeff1;
-  border-radius: 10px ;
+  background-color: #efeff1;
+  border-radius: 10px;
   width: 90%;
   margin-left: 16px;
   padding: 2px 0;
@@ -534,7 +527,7 @@ label.navbar-btn > i:hover {
   background-color: #efeff1;
   width: 90%;
   border: none;
-  border-radius: 10px ;
+  border-radius: 10px;
   padding: 8px 10px 10px 0px;
   font-size: 1.6rem;
   outline: none;
@@ -553,21 +546,20 @@ label.navbar-btn > i:hover {
   font-weight: 500;
 }
 
-.title-item-hover:hover  {
-  color:var(--primary-color)
+.title-item-hover:hover {
+  color: var(--primary-color);
 }
 
 @keyframes modalFadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(-140px);
-    }
-    to {  
-      opacity: 1;
-      transform: translateY(0);
-    }
+  from {
+    opacity: 0;
+    transform: translateY(-140px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
-
 
 /* ------------------------------------
     From
@@ -576,7 +568,7 @@ label.navbar-btn > i:hover {
   background-color: rgba(0, 0, 0, 0.3);
   width: 100%;
   height: 100%;
-  box-shadow: 0 2px 5px 0 rgba(51,62,73,.1);
+  box-shadow: 0 2px 5px 0 rgba(51, 62, 73, 0.1);
   position: fixed;
   top: 0px;
   left: 0;
@@ -585,7 +577,7 @@ label.navbar-btn > i:hover {
 }
 
 .container-from.open {
-  display: block ;
+  display: block;
 }
 
 .form {
@@ -609,7 +601,7 @@ label.navbar-btn > i:hover {
   border-radius: 10px;
   width: 100%;
   color: var(--white-color);
-  font-size: 1.6rem ;
+  font-size: 1.6rem;
   font-weight: bold;
   font-family: "Poppins", sans-serif;
   border: none;
