@@ -1,59 +1,6 @@
 /*--------------------------------------
   Main page
 -------------------------------------- */
-/* Header-sort-bar-mobile */
-.header__sort-bar {
-  position: fixed;
-  top: 94px;
-  left: 0;
-  right: 0;
-  background-color: var(--white-color);
-  height: 48px;
-  margin: 0;
-  padding: 0;
-  align-items: center;
-  border-top: 2px solid #e5e5e5;
-  border-bottom: 1px solid #e5e5e5;
-  z-index: -1;
-}
-
-.header__sort-bar-top {
-  top: 74px;
-}
-
-.header__sort-item {
-  flex: 1;
-}
-
-.header__sort-item:first-child .header__sort-link::before {
-  display: none;
-}
-
-.header__sort-link {
-  text-decoration: none;
-  font-size: 1.4rem;
-  color: var(--text-color);
-  display: block;
-  height: 100%;
-  line-height: var(--header-sort-bar-height);
-  text-align: center;
-  position: relative;
-}
-
-.header__sort-item--active .header__sort-link {
-  color: var(--primary-color);
-}
-
-.header__sort-link::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 0;
-  height: 100%;
-  border-left: 2px solid #e5e5e5;
-  transform: translateY(-50%);
-}
-
 .container-home-page {
   background: url(../images/slider-01.png) no-repeat fixed center;
   background-size: 100%;
@@ -1260,28 +1207,28 @@ textarea:hover {
   align-items: center;
 }
 
-#n-main {
-  display: flex;
+.container__new {
+  display:flex;
+  margin: 30px auto 0;
   background-color: white;
-  font-family: "Be Vietnam";
   width: 1200px;
   height: 500px;
-  margin: 0 auto;
+  
 }
 
-#n-mainleft {
+.container__new-left {
   width: 50%;
   height: 100%;
 }
 
-#n-mainright {
+.container__new-right {
   display: flex;
   flex-wrap: wrap;
   width: 50%;
   height: 100%;
 }
 
-.n-left {
+.new-left {
   position: relative;
   padding: 20px 10px 20px 20px;
   width: 100%;
@@ -1320,63 +1267,61 @@ textarea:hover {
   padding-bottom: 20px;
 }
 
-#n-main img {
+.container__new img {
   width: 100%;
   height: 100%;
   filter: brightness(75%);
 }
 
-#n-main a {
+.container__new a {
   z-index: 1;
   position: absolute;
   width: 95%;
   height: 95%;
 }
 /* Thumb */
-.n-thump {
+.new-thumb {
   z-index: 1;
   width: 95%;
   color: white;
   position: absolute;
-  bottom: 20px;
+  bottom: 50px;
 }
 
-.n-thump > * {
-  margin: 5px;
-}
-
-.n-thump a {
+.new-thumb a {
   position: static !important;
-  font-size: 28px;
-  color: white;
+  font-size: 1.6rem;
+  color: var(--white-color);
 }
 
-.n-thump p:first-child {
+.new-thumb p:first-child {
   display: block;
   font-style: italic;
   margin: 10px;
+  font-weight: 700;
 }
 
-.n-thump p:last-child {
+.new-thumb p:last-child {
   margin-top: 0;
+  line-height: 1.2;
 }
 
-.n-thump p {
+.new-thumb p {
   font-size: 18px;
   display: none;
   transition: 3s;
 }
 
-.n-thump:hover p {
+.new-thumb:hover p:last-child {
   display: block;
-  transform: translateY(5px);
+  transform: translateY(20px);
   transition: 1s;
 }
 /* ------------- */
 #n-mainright .n-thump a {
   position: static !important;
   font-size: 20px;
-  color: white;
+  color: var(--white-color);
 }
 
 /* CLONE */

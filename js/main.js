@@ -88,60 +88,59 @@ $(document).ready(function () {
   });
 });
 
-//Modal-provice
-const chooseProvince = document.querySelector(".js-province");
-const modal = document.querySelector(".js-modal");
-const modalContainer = document.querySelector(".js-modal-container");
-const modalClose = document.querySelector(".js-modal-close");
-
-// Hàm hiến thị modal province (thêm class open vào modal)
-function showProvince() {
-  modal.classList.add("open");
-}
-
-// Hàm ấn modal province (gỡ bỏ class open của modal)
-function hideProvince() {
-  modal.classList.remove("open");
-}
-
-//Nghe hành vi click
-chooseProvince.addEventListener("click", showProvince);
-
-// Nghe hành vi click vào button close
-modalClose.addEventListener("click", hideProvince);
-
-modal.addEventListener("click", hideProvince);
-modalContainer.addEventListener("click", function (event) {
-  event.stopPropagation();
-});
-
-// Modal-Form-Đăng-Nhập
-const from_pc = document.querySelector(".js-from");
-const from_tablet_mobile = document.querySelector(".js-from-tablet-mobile");
-const modals = document.querySelector(".js-modals");
-const modalsContainer = document.querySelector(".js-modals-container");
+/*------------------------------------------
+          Modal-Form-Đăng-Ký
+-------------------------------------------- */
+const form_pc_1 = document.querySelector(".js-form-sign-up");
+const form_pc_2 = document.querySelector(".js-form-sign-in");
+const form_tablet_mobile_1 = document.querySelector(
+  ".js-form-sign-up-mobile-tablet"
+);
+const form_tablet_mobile_2 = document.querySelector(
+  ".js-form-sign-in-mobile-tablet"
+);
+const modalSignUp = document.querySelector(".js-modal-sign-up");
+const modalSignIn = document.querySelector(".js-modal-sign-in");
+const modalContainerSignUp = document.querySelector("#form-1");
+const modalContainerSignIn = document.querySelector("#form-2");
 
 // Hàm hiến thị modal (thêm class open vào modal)
-function showFrom() {
-  modals.classList.add("open");
+function showFromSignUp() {
+  modalSignUp.classList.add("open");
+}
+
+function showFromSignIn() {
+  modalSignIn.classList.add("open");
 }
 
 // Hàm ấn modal (gỡ bỏ class open của modal)
-function hideFrom() {
-  modals.classList.remove("open");
+function hideFromSignUp() {
+  modalSignUp.classList.remove("open");
+}
+
+function hideFromSignIn() {
+  modalSignIn.classList.remove("open");
 }
 
 //Nghe hành vi click
-from_pc.addEventListener("click", showFrom);
-from_tablet_mobile.addEventListener("click", showFrom);
+form_pc_1.addEventListener("click", showFromSignUp);
+form_pc_2.addEventListener("click", showFromSignIn);
+form_tablet_mobile_1.addEventListener("click", showFromSignUp);
+form_tablet_mobile_2.addEventListener("click", showFromSignIn);
 
-modals.addEventListener("click", hideFrom);
+modalSignUp.addEventListener("click", hideFromSignUp);
+modalSignIn.addEventListener("click", hideFromSignIn);
 
-modalsContainer.addEventListener("click", function (event) {
+modalContainerSignUp.addEventListener("click", function (event) {
+  event.stopPropagation();
+});
+modalContainerSignIn.addEventListener("click", function (event) {
   event.stopPropagation();
 });
 
-//See more product
+/*------------------------------------------
+             See More Product
+-------------------------------------------- */
 var moreBtn = document.querySelector(".js-see-more");
 var moreSeeProduct = document.querySelectorAll(".product-more");
 var count = 0;
