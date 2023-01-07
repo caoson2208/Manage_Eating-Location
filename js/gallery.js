@@ -1,9 +1,9 @@
 // const glImage = document.getElementsByClassName('gl-image')
-const closeBtn = document.getElementById("btn-close");
-const gallery = document.getElementById("gallery");
-const prevBtn = document.getElementById("btn-prev");
-const nextBtn = document.getElementById("btn-next");
-const images = document.getElementsByClassName("gl-imagesrc");
+const closeBtn = document.querySelector("#btn-close");
+const gallery = document.querySelector("#gallery");
+const prevBtn = document.querySelector("#btn-prev");
+const nextBtn = document.querySelector("#btn-next");
+const images = document.querySelectorAll(".gl-imagesrc");
 const galleryImg = document.getElementById("gl-imagezoom");
 var current = 0;
 

@@ -1110,16 +1110,14 @@ textarea:hover {
   margin-top: 20px;
 }
 
-.gl-image {
-  width: 390px;
-  margin: 10px;
-}
-
 .gl-image > img {
   width: 100%;
-  border: 3px solid var(--primary-color);
+  height: 240px;
+  object-fit: cover;
+  border: 2px solid var(--primary-color);
   transition: 0.3s;
   cursor: pointer;
+  margin: 16px 0;
 }
 
 .gl-image > img:hover {
@@ -1208,12 +1206,11 @@ textarea:hover {
 }
 
 .container__new {
-  display:flex;
+  display: flex;
   margin: 30px auto 0;
   background-color: white;
   width: 1200px;
   height: 500px;
-  
 }
 
 .container__new-left {
