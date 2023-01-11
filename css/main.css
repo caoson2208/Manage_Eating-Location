@@ -253,7 +253,7 @@
 }
 
 .product-item__img:hover .product__item-sale-off {
-  display: none;
+  /* display: none; */
 }
 
 .product-item__img:hover .produc-item-info {
